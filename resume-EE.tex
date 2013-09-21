@@ -1,0 +1,178 @@
+\documentclass{article}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[usenames]{color}
+\usepackage{enumitem}
+\usepackage[super]{nth}
+
+\thispagestyle{empty}
+\pagestyle{empty}
+
+\leftmargin=0.25in
+\oddsidemargin=0.25in
+\textwidth=6.0in
+\topmargin=-0.5in
+\textheight=10in
+
+\raggedright
+%\renewcommand{\rmdefault}{phv}
+
+\pagenumbering{arabic}
+
+\def\bull{\vrule height .8ex width .7ex depth -.1ex }
+
+
+% DEFINITIONS FOR RESUME
+
+\newenvironment{changemargin}[2]{%
+  \begin{list}{}{%
+    \setlength{\topsep}{0pt}%
+    \setlength{\leftmargin}{#1}%
+    \setlength{\rightmargin}{#2}%
+    \setlength{\listparindent}{\parindent}%
+    \setlength{\itemindent}{\parindent}%
+    \setlength{\parsep}{\parskip}%
+  }%
+  \item[]}{\end{list}
+}
+
+\newcommand{\lineover}{
+	\begin{changemargin}{-0.05in}{-0.05in}
+		\vspace*{-8pt}
+		\hrulefill \\
+		\vspace*{-2pt}
+	\end{changemargin}
+}
+
+\newcommand{\header}[1]{
+	\begin{changemargin}{-0.5in}{-0.5in}
+		{\large \textbf{\scshape{#1}}}\\
+  	\lineover
+	\end{changemargin}
+}
+
+\newcommand{\contact}[6]{
+	\begin{changemargin}{1in}{1in}
+		\begin{center}
+			{\LARGE \scshape {#1}}\\ \smallskip
+			{#4}\\ \smallskip
+			{#2} \hfill {#5}\\ \smallskip
+			{#3} \hfill {#6}\\ \smallskip 
+		\end{center}
+	\end{changemargin}
+}
+
+\newenvironment{body} {
+	\vspace*{-16pt}
+	\begin{changemargin}{-0.25in}{-0.5in}
+  }	
+	{\end{changemargin}
+}	
+
+\newcommand{\school}[4]{
+	\textbf{#1} \hfill \emph{#2\\}
+	#3\\ 
+	#4\\
+}
+
+% END RESUME DEFINITIONS
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Name
+\contact{Albert Gural}{MSC \#466}{Pasadena, CA 91126-0466}{http://www.albertgural.com/}{agural@caltech.edu}{(703) 346-2869}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Education
+\header{Education}
+
+\begin{body}
+	\vspace{14pt}
+	\textbf{California Institute of Technology} \hfill \textbf{Pasadena, CA}{} \\
+	\emph{Electrical Engineering with Computer Science Minor} \hfill \emph{Oct. 2012 - present} \\
+	\begin{itemize}%[topsep=0pt, partopsep=0pt, itemsep=-5pt]
+	\item \textbf{GPA:} N/A
+	\item \textbf{Relevant Coursework:} CS21 - Decidability and Tractability, CS11 - ACM Competition class, APh9 - Semiconductor Electronics, Ma5 - Abstract Algebra, Ma2b - Probability and Statistics
+	\item \textbf{Activities:} ACM Programming Contest (\textit{2012}), Robotics Team (Electrical and Programming) (\textit{2012-13})
+	\item \textbf{Awards:} Top 5 individual in Caltech's ACM team and fastest ACM regional problem solution (\textit{2012})
+	\end{itemize}
+
+\medskip
+
+	\textbf{Thomas Jefferson High School for Science and Technology} \hfill \textbf{Alexandria, VA} \\
+	\emph{Senior Research in Computer Science} \hfill \emph{Sept. 2008 - June 2012} \\
+	\begin{itemize}%[topsep=0pt, partopsep=0pt, itemsep=-5pt]
+	\item \textbf{GPA:} 4.45/4.00
+	\item \textbf{Relevant Coursework:} AP Computer Science, Artificial Intelligence, Microprocessor Electronics (including Motorola MC6800 Assembly programming), Single and Multivariable Calculus, Advanced Math Techniques with Linear Algebra, Differential Equations, Complex Analysis
+	\item \textbf{Activities:} Naval Research Laboratory Intern (\textit{2011-12}), Senior Computer Team (co-captain, \textit{2011-12}), Intermediate Computer Team (co-captain, \textit{2010-11}), Varsity Math Team, Botball Robotics, Physics Team
+	\item \textbf{Awards:} USACO (\nth{1} place average score in silver division, \textit{2010-12}), ACSL (\nth{1} place team, \textit{2010}; \nth{1} place individual, \textit{2010-11}), AIME qualifier (\textit{2009-12}), Naval Research Lab (\nth{1} place project in CS, \textit{2011})
+	\end{itemize}
+\end{body}
+
+\smallskip
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Experience
+\header{Work and Experience}
+
+\begin{body}
+	\vspace{14pt}
+	\textbf{Naval Research Laboratory}, \emph{Intern, High Performance Computing} \hfill \emph{Summer 2011, 2012}\\
+	%\vspace*{-4pt}
+	\begin{itemize}%[topsep=0pt, partopsep=0pt, itemsep=-5pt]
+		\item \emph{Summer 2012:} Built a molecular dynamics simulation in C; looked for an optimum integration step algorithm from brute force, linked cell, and MLG (monotonic Lagrangian grid).
+		\item \emph{Summer 2011:} Created an MPI (Message Passing Interface) library for parallel operations on a grid in C++, testing on a wave propagation simulation, then analyzed its efficiency.
+	\end{itemize}
+
+	\medskip
+	
+	\textbf{Solid State Electronics Laboratory}, \emph{Student} \hfill \emph{Fall and Winter 2012-13}\\
+	%\vspace*{-4pt}
+	\begin{itemize}%[topsep=0pt, partopsep=0pt, itemsep=-5pt]
+		\item Fabricated semiconductor devices including a GaAs LED, a Schottky diode, and a MOSCAP.
+		\item Took pictures during the fabrication process for future documentation.
+	\end{itemize}
+	
+	\medskip	
+	
+	\textbf{Planning, Design, and Construction of a High Tech Flashlight Circuit Board}, \emph{for fun} \hfill \emph{2011-13}\\
+	%\vspace*{-4pt}
+	\begin{itemize}%[topsep=0pt, partopsep=0pt, itemsep=-5pt]
+		\item Designed a circuit schematic diagram using EAGLE CadSoft including an ATmega168 MCU (28 pin VQFN package), capacitive touch sensors, and a 3W constant current LED driver.  Circuit contained around 100 SMD components with physical footprints as low as $0.75\text{mm} \times 0.75 \text{mm}$ size.
+		\item Designed, laid out, and routed a very small, densely packed 4-layer circuit board in EAGLE, ordered and cut out custom boards, and hot-air reworked SMD parts onto the board to complete board construction.
+	\end{itemize}
+\end{body}
+
+\smallskip
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Skills
+\header{Skills and Interests}
+
+\begin{body}
+	\vspace{14pt}
+	\textbf{Engineering Projects (built from scratch):} \\
+	\textit{Circuit Design and Construction:} Designed and etched circuit boards; soldered through-hole and SMD components (down to 0402 size) onto the boards.  Also designed 4-layer boards and custom-ordered them.\\
+	\textit{Electronic Devices:} Lasers (658nm 200mW, 532nm 5mW, 405nm 20mW), Flashlights using high power 1W white LEDs with MCU control and various peripherals (IR control, Li-Ion charging, etc), some coilgun research. \\
+	
+	\medskip
+
+	\textbf{Tools, Software, and Languages:} \\
+	\textit{Tools:} Oscilloscopes, Signal Generators, Soldering (hand, hot air), machine tools, basic laboratory equipment \\
+	\textit{Software:} EAGLE CadSoft PCB Design, LT spice, MPLAB, AVR Studio, Arduino, some HEX editors \\
+	\textit{Proficient:} C/C++, Java, Python, \LaTeX, HTML, CSS, JavaScript, Mathematica, PIC Assembly, AVR C \\ 
+	\textit{Familiar:} Motorola MC6800 Assembly, Fortran, PHP, Bash \\
+
+	\medskip
+
+	\textbf{Hobbies and Interests:} Computer Science and Mathematics, Analog and Digital Electronics, Building Electronic Devices (mix of EE, ME, and CS), Puzzles, Product and Web Design, Graphical Arts, and Origami \\ See website for detailed project descriptions (http://www.albertgural.com/). \\
+\end{body}
+
+\smallskip
+
+\end{document}
