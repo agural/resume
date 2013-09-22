@@ -52,17 +52,6 @@
 	\end{changemargin}
 }
 
-\newcommand{\contact}[6]{
-	\begin{changemargin}{1in}{1in}
-		\begin{center}
-			{\LARGE \scshape {#1}}\\ \smallskip
-			{#4}\\ \smallskip
-			{#2} \hfill {#5}\\ \smallskip
-			{#3} \hfill {#6}\\ \smallskip 
-		\end{center}
-	\end{changemargin}
-}
-
 \newenvironment{body} {
 	\vspace*{-16pt}
 	\begin{changemargin}{-0.25in}{-0.5in}
@@ -76,14 +65,32 @@
 	#4\\
 }
 
+\newcommand\textline[4][t]{%
+  \par\smallskip\noindent\parbox[#1]{.3\textwidth}{\raggedright#2}%
+  \parbox[#1]{.4\textwidth}{\centering#3}%
+  \parbox[#1]{.3\textwidth}{\raggedleft#4}\par\smallskip%
+}
+
 % END RESUME DEFINITIONS
 
 \begin{document}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Name
-\contact{Albert Gural}{MSC \#466}{Pasadena, CA 91126-0466}{http://www.albertgural.com/}{agural@caltech.edu}{(703) 346-2869}
+\begin{changemargin}{0.5in}{0.5in}
+	\begin{center}
+		{\huge \scshape {Albert Gural}}\\ \smallskip
+		{http://www.albertgural.com/}\\ \smallskip
+		{\small agural@caltech.edu $|$ 703.346.2869}\\
+		{\footnotesize MSC \#466, Pasadena, CA 91126-0466}
+	\end{center}
+\end{changemargin}
 
+%\begin{changemargin}{-0in}{-0in}
+	%\textline[t]{.}{\huge \scshape Albert Gural}{MSC \#466\\Pasadena, CA 91126-0466}
+	%\textline[t]{.}{http://www.albertgural.com/}{}
+	%\textline[t]{.}{agural@caltech.edu $|$ 703.346.2869}{}
+%\end{changemargin}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Education
@@ -119,11 +126,21 @@
 
 \begin{body}
 	\vspace{14pt}
-	\textbf{Google Research}, \emph{Software Engineering Intern} \hfill \emph{Summer 2013}\\
+	\textbf{Google (Research Division)}, \emph{Software Engineering Intern} \hfill \emph{Summer 2013}\\
 	\vspace*{-4pt}
 	\begin{itemize}
 		\item Developed image processing techniques using C++, OpenCV, and Ceres non-linear optimizer to clean a sequence of object images to QA specifications
 		\item Allows for a much larger class of object image sequences to be processed; currently for Google Shopping
+	\end{itemize}
+	
+	\medskip
+	
+	\textbf{Planning, Design, and Construction of a High Tech Flashlight}, \emph{for fun} \hfill \emph{2011-13}\\
+	\vspace*{-4pt}
+	\begin{itemize}
+		\item Designed a circuit including an ATmega168 MCU (28 pin VQFN package), capacitive touch sensors, a 3W constant current LED driver, and around $100$ other SMD components
+		\item Designed and built the corresponding circuit board, including hot-air reworking SMD parts onto the board
+		\item Programmed the board with a bootloader using V-USB for AVR; designed and 3D-printed prototype case
 	\end{itemize}
 
 	\medskip
@@ -132,7 +149,7 @@
 	\vspace*{-4pt}
 	\begin{itemize}
 		\item \emph{Summer 2012:} Built a molecular dynamics simulation in C; looked for an optimum integration step algorithm from brute force, linked cell, and MLG (monotonic Lagrangian grid)
-		\item \emph{Summer 2011:} Created an MPI (Message Passing Interface) library for parallel operations on a grid in C++, testing on a wave propagation simulation, then analyzed its efficiency
+		\item \emph{Summer 2011:} Created an MPI (Message Passing Interface) library for parallel operations on a grid in C++, tested on a wave propagation simulation, then analyzed its efficiency
 	\end{itemize}
 
 	\medskip
@@ -140,17 +157,7 @@
 	\textbf{Innovative Defence Technologies}, \emph{Competitor} \hfill \emph{Spring 2011}\\
 	\vspace*{-4pt}
 	\begin{itemize}
-		\item Developed software in Java for client/server XML data communication over TCP/IP sockets; won \nth{1} place
-	\end{itemize}
-	
-	\medskip
-	
-	\textbf{Planning, Design, and Construction of a High Tech Flashlight}, \emph{for fun} \hfill \emph{2011-13}\\
-	\vspace*{-4pt}
-	\begin{itemize}
-		\item Designed a circuit schematic including an ATmega168 MCU (28 pin VQFN package), capacitive touch sensors, a 3W constant current LED driver, and around $100$ other SMD components
-		\item Designed and ordered the corresponding circuit board, hot-air reworked SMD parts onto the board
-		\item Programmed the board with a bootloader using V-USB for AVR; designed and 3D-printed prototype case
+		\item Team of 3; developed client/server XML data communication over TCP/IP sockets in Java; won \nth{1} place
 	\end{itemize}
 \end{body}
 
@@ -164,12 +171,12 @@
 \begin{body}
 	\vspace{14pt}
 	\textbf{Engineering Projects (built from scratch):} \\
-	\textit{Circuit Design and Construction:} Designed and etched circuit boards; soldered through-hole and SMD components (down to 0402 size) onto the boards.  Also designed 4-layer boards and custom-ordered them.\\
-	\textit{Electronic Devices:} Lasers (658nm 200mW, 532nm 5mW, 405nm 20mW), Flashlights using high power 1W white LEDs with MCU control and various peripherals (IR control, Li-Ion charging, etc), some coilgun research. \\
+	\textit{Circuit Design and Construction:} Designed and etched circuit boards; soldered through-hole and SMD components (down to 0402 size) onto the boards.  Also designed, built, and tested 4-layer boards \\
+	\textit{Electronic Devices:} Lasers (658nm 200mW, 532nm 5mW, 405nm 20mW), Flashlights using high power 1W white LEDs with MCU control and various peripherals (IR control, Li-Ion charging, etc), Coilguns \\
 	
 	\medskip
 
-	\textbf{Tools, Software, and Languages:} \\
+	\textbf{Tools, Software, Libraries, Languages:} \\
 	\textit{Tools:} Oscilloscopes, Signal Generators, Soldering (hand, hot air), machine tools, basic laboratory equipment \\
 	\textit{Software:} EAGLE PCB Design, Autodesk Inventor, LT spice, Arduino, some HEX editors \\
 	\textit{Proficient:} C/C++, Java, Python, \LaTeX, HTML, CSS, JavaScript, x86 Assembly, OpenCV \\ 
@@ -177,7 +184,7 @@
 
 	\medskip
 
-	\textbf{Hobbies and Interests:} Mathematics and Computer Science; Analog and Digital Electronics; Puzzles; Planning, Designing, and Making Electronic Devices (mix of EE, ME, and CS); Graphical Arts \\ See website for detailed project descriptions (http://www.albertgural.com/projects/). \\
+	\textbf{Hobbies and Interests:} Mathematics and Computer Science; Analog and Digital Electronics; Puzzles; Planning, Designing, and Making Electronic Devices (mix of EE, CS, and ME); Graphical Arts \\ See website for detailed project descriptions (http://www.albertgural.com/projects/). \\
 \end{body}
 
 \smallskip
