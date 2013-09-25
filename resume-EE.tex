@@ -65,6 +65,8 @@
 	#4\\
 }
 
+\newcommand{\CC}{C\nolinebreak\hspace{-.05em}\raisebox{.4ex}{\tiny\bf +}\nolinebreak\hspace{-.10em}\raisebox{.4ex}{\tiny\bf +}}
+
 \newcommand\textline[4][t]{%
   \par\smallskip\noindent\parbox[#1]{.3\textwidth}{\raggedright#2}%
   \parbox[#1]{.4\textwidth}{\centering#3}%
@@ -99,9 +101,9 @@
 \begin{body}
 	\vspace{14pt}
 	\textbf{California Institute of Technology} \hfill \textbf{Pasadena, CA}{} \\
-	\emph{Electrical Engineering with Computer Science Minor}, GPA: $3.8/4.0$ \hfill \emph{Oct. 2012 - present} \\
+	\emph{Electrical Engineering with a minor in Computer Science}, GPA: $3.8/4.0$ \hfill \emph{Oct. 2012 - present} \\
 	\begin{itemize}%[topsep=0pt, partopsep=0pt, itemsep=-5pt]
-	\item \textbf{Relevant Coursework:} EE40 - Semiconductor Sensors and Actuators, APh9 - Solid-State Electronics, CS38 - Intro to Algorithms, CS24 - Intro to Computing Systems, CS21 - Decidability and Tractability, CS11 - ACM Competition, Ma5 - Abstract Algebra, Ma2b - Probability and Statistics
+	\item \textbf{Relevant Coursework:} Semiconductor Sensors and Actuators, Solid-State Electronics Laboratory,\\ Intro to Algorithms, Intro to Computing Systems, Decidability and Tractability, Abstract Algebra, Probability and Statistics
 	\item \textbf{Activities:} ACM Programming Contest (\textit{2012}), Robotics Team (Electrical) (\textit{2012-13})
 	\item \textbf{Awards:} Top 5 individual in Caltech's ACM team and fastest ACM regional problem solution (\textit{2012})
 	\end{itemize}
@@ -112,8 +114,8 @@
 	\emph{Senior Research in Computer Science}, GPA: $4.45/4.00$ \hfill \emph{Sept. 2008 - June 2012} \\
 	\begin{itemize}%[topsep=0pt, partopsep=0pt, itemsep=-5pt]
 	\item \textbf{Relevant Coursework:} Microprocessor Electronics (including Motorola MC6800 Assembly programming), AP Computer Science, Artificial Intelligence, Single and Multivariable Calculus, Advanced Math Techniques with Linear Algebra, Differential Equations, Complex Analysis
-	\item \textbf{Activities:} Computer Teams (co-captain, \textit{2010-12}), Varsity Math Team, Botball Robotics, Physics Team
-	\item \textbf{Awards:} USACO (\nth{1} place average score in silver division, \textit{2010-12}), ACSL (\nth{1} place team, \textit{2010}; \nth{1} place individual, \textit{2010-11}), AIME qualifier (\textit{2009-12}), Naval Research Lab (\nth{1} place project in CS, \textit{2011})
+	\item \textbf{Activities:} Computer Team (co-captain, \textit{2010-12}), Varsity Math Team, Botball Robotics, Physics Team
+	\item \textbf{Awards:} USACO (top average score in silver division, \textit{2010-12}), ACSL (\nth{1} place team, \textit{2010}; \nth{1} place individual, \textit{2010-11}), AIME qualifier (\textit{2009-12}), Naval Research Lab (\nth{1} place project in CS, \textit{2011})
 	\end{itemize}
 \end{body}
 
@@ -129,7 +131,7 @@
 	\textbf{Google (Research Division)}, \emph{Software Engineering Intern} \hfill \emph{Summer 2013}\\
 	\vspace*{-4pt}
 	\begin{itemize}
-		\item Developed image processing techniques using C++, OpenCV, and Ceres non-linear optimizer to clean a sequence of object images to QA specifications
+		\item Developed image processing techniques using \CC, OpenCV, and Ceres non-linear optimizer to clean a sequence of object photos to QA specifications
 		\item Allows for a much larger class of object image sequences to be processed; currently for Google Shopping
 	\end{itemize}
 	
@@ -138,9 +140,9 @@
 	\textbf{Planning, Design, and Construction of a High Tech Flashlight}, \emph{for fun} \hfill \emph{2011-13}\\
 	\vspace*{-4pt}
 	\begin{itemize}
-		\item Designed a circuit including an ATmega168 MCU (28 pin VQFN package), capacitive touch sensors, a 3W constant current LED driver, and around $100$ other SMD components
+		\item Designed a circuit including an ATmega168 MCU, capacitive touch sensors, a 3W constant current LED driver, and USB connectivity, incorporating around $100$ SMD components
 		\item Designed and built the corresponding circuit board, including hot-air reworking SMD parts onto the board
-		\item Programmed the board with a bootloader using V-USB for AVR; designed and 3D-printed prototype case
+		\item Programmed the board in Arduino and AVR C; designed and 3D-printed a prototype case
 	\end{itemize}
 
 	\medskip
@@ -148,8 +150,8 @@
 	\textbf{Naval Research Laboratory}, \emph{Intern, High Performance Computing} \hfill \emph{Summer 2011, 2012}\\
 	\vspace*{-4pt}
 	\begin{itemize}
-		\item \emph{Summer 2012:} Built a molecular dynamics simulation in C; looked for an optimum integration step algorithm from brute force, linked cell, and MLG (monotonic Lagrangian grid)
-		\item \emph{Summer 2011:} Created an MPI (Message Passing Interface) library for parallel operations on a grid in C++, tested on a wave propagation simulation, then analyzed its efficiency
+		\item \emph{Summer 2012:} Built a molecular dynamics simulation in C; compared different integration step algorithms including brute force, linked cell, and monotonic Lagrangian grid
+		\item \emph{Summer 2011:} Created an MPI (Message Passing Interface) library for parallel operations on a grid in \CC, tested on a wave propagation simulation, then analyzed its efficiency
 	\end{itemize}
 
 	\medskip
@@ -172,15 +174,13 @@
 	\vspace{14pt}
 	\textbf{Engineering Projects (built from scratch):} \\
 	\textit{Circuit Design and Construction:} Designed and etched circuit boards; soldered through-hole and SMD components (down to 0402 size) onto the boards.  Also designed, built, and tested 4-layer boards \\
-	\textit{Electronic Devices:} Lasers (658nm 200mW, 532nm 5mW, 405nm 20mW), Flashlights using high power 1W white LEDs with MCU control and various peripherals (IR control, Li-Ion charging, etc), Coilguns \\
+	\textit{Electronic Devices:} Lasers (solid-state diode, class 3B), flashlights using high power LEDs with MCU control and various peripherals (IR control, Li-Ion charging, etc), coilgun, rudimentary microprocessor oscilloscope \\
 	
 	\medskip
 
-	\textbf{Tools, Software, Libraries, Languages:} \\
-	\textit{Tools:} Oscilloscopes, Signal Generators, Soldering (hand, hot air), machine tools, basic laboratory equipment \\
-	\textit{Software:} EAGLE PCB Design, Autodesk Inventor, LT spice, Arduino, some HEX editors \\
-	\textit{Proficient:} C/C++, Java, Python, \LaTeX, HTML, CSS, JavaScript, x86 Assembly, OpenCV \\ 
-	\textit{Familiar:} Mathematica, Ceres Solver, AVR/Arduino C, PIC \& MC6800 Assembly, Fortran, Bash \\
+	\textbf{Tools and Languages:} \\
+	\textit{Tools/Software:} \LaTeX, Git, Mathematica, some Matlab, EAGLE PCB Design, Autodesk Inventor, LT spice, Oscilloscopes, Signal Generators, Soldering (hand, hot air), machine tools, basic laboratory equipment \\
+	\textit{Languages/Libraries:} C/\CC, Java, Python, HTML, CSS, JavaScript, x86 Assembly, Arduino/AVR C, OpenCV, Ceres Solver, MPI, some Bash \\
 
 	\medskip
 
