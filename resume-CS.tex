@@ -76,13 +76,24 @@
 	#4\\
 }
 
+\newcommand{\CC}{C\nolinebreak\hspace{-.05em}\raisebox{.4ex}{\tiny\bf +}\nolinebreak\hspace{-.10em}\raisebox{.4ex}{\tiny\bf +}}
+
 % END RESUME DEFINITIONS
 
 \begin{document}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Name
-\contact{Albert Gural}{MSC \#466}{Pasadena, CA 91126-0466}{http://www.albertgural.com/}{agural@caltech.edu}{(703) 346-2869}
+\begin{changemargin}{0.5in}{0.5in}
+	\begin{center}
+		{\huge \scshape {Albert Gural}}\\ \smallskip
+		{http://www.albertgural.com/}\\ \smallskip
+		{\small agural@caltech.edu $|$ 703.346.2869}\\
+		{\footnotesize MSC \#466, Pasadena, CA 91126-0466}
+	\end{center}
+\end{changemargin}
+
+%\contact{Albert Gural}{MSC \#466}{Pasadena, CA 91126-0466}{http://www.albertgural.com/}{agural@caltech.edu}{(703) 346-2869}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -92,10 +103,11 @@
 \begin{body}
 	\vspace{14pt}
 	\textbf{California Institute of Technology} \hfill \textbf{Pasadena, CA}{} \\
-	\emph{Electrical Engineering with Computer Science Minor}, GPA: $3.8/4.0$ \hfill \emph{Oct. 2012 - present} \\
-	\begin{itemize}%[topsep=0pt, partopsep=0pt, itemsep=-5pt]
-	\item \textbf{Relevant Coursework:} CS38 - Intro to Algorithms, CS24 - Intro to Computing Systems, CS21 - Decidability and Tractability, CS11 - ACM Competition, EE40 - Semiconductor Sensors and Actuators, APh9 - Solid-State Electronics, Ma5 - Abstract Algebra, Ma2b - Probability and Statistics
-	\item \textbf{Activities:} ACM Programming Contest (\textit{2012}), Robotics Team (Electrical) (\textit{2012-13})
+	\emph{Electrical Engineering with a minor in Computer Science}, GPA: $3.8/4.0$ \hfill \emph{Oct. 2012 - present} \\
+	\begin{itemize}
+	\item \textbf{Current Coursework:} Intro to Embedded Systems, Circuits and Systems, Wave Physics (first of a three part course in Quantum Physics and Statistical Mechanics), Complex Analysis
+	\item \textbf{Past Coursework:} Intro to Algorithms, Intro to Computing Systems, Decidability and Tractability, Semiconductor Devices, Solid-State Electronics (Lab), Abstract Algebra, Probability and Statistics
+	\item \textbf{Activities:} ACM Programming Contest (\textit{2012}), Robotics Team (Electronics) (\textit{2012-13})
 	\item \textbf{Awards:} Top 5 individual in Caltech's ACM team and fastest ACM regional problem solution (\textit{2012})
 	\end{itemize}
 
@@ -103,10 +115,10 @@
 
 	\textbf{Thomas Jefferson High School for Science and Technology} \hfill \textbf{Alexandria, VA} \\
 	\emph{Senior Research in Computer Science}, GPA: $4.45/4.00$ \hfill \emph{Sept. 2008 - June 2012} \\
-	\begin{itemize}%[topsep=0pt, partopsep=0pt, itemsep=-5pt]
-	\item \textbf{Relevant Coursework:} AP Computer Science, Artificial Intelligence, Microprocessor Electronics (including Motorola MC6800 Assembly programming), Single and Multivariable Calculus, Advanced Math Techniques with Linear Algebra, Differential Equations, Complex Analysis
-	\item \textbf{Activities:} Computer Teams (co-captain, \textit{2010-12}), Varsity Math Team, Botball Robotics, Physics Team
-	\item \textbf{Awards:} USACO (\nth{1} place average score in silver division, \textit{2010-12}), ACSL (\nth{1} place team, \textit{2010}; \nth{1} place individual, \textit{2010-11}), AIME qualifier (\textit{2009-12}), Naval Research Lab (\nth{1} place project in CS, \textit{2011})
+	\begin{itemize}
+	\item \textbf{Relevant Coursework:} Microprocessor Electronics (including Motorola MC6800 Assembly programming), AP Computer Science, Artificial Intelligence, Single and Multivariable Calculus, Advanced Math Techniques with Linear Algebra, Differential Equations, Complex Analysis
+	\item \textbf{Activities:} Computer Team (co-captain, \textit{2010-12}), Varsity Math Team, Botball Robotics, Physics Team
+	\item \textbf{Awards:} USACO (algorithmic coding, top average score in silver division, \textit{2010-12}), ACSL (CS topics, \nth{1} place team, \textit{2010}; \nth{1} place individual, \textit{2010-11}), IDT (programming development, \nth{1} place team, \textit{2011}), AIME qualifier (math, \textit{2009-12}), Naval Research Lab (\nth{1} place project in CS, \textit{2011})
 	\end{itemize}
 \end{body}
 
@@ -119,11 +131,11 @@
 
 \begin{body}
 	\vspace{14pt}
-	\textbf{Google Research}, \emph{Software Engineering Intern} \hfill \emph{Summer 2013}\\
+	\textbf{Google (Research Division)}, \emph{Software Engineering Intern} \hfill \emph{Summer 2013}\\
 	\vspace*{-4pt}
 	\begin{itemize}
-		\item Developed image processing techniques using C++, OpenCV, and Ceres non-linear optimizer to clean a sequence of object images to QA specifications
-		\item For Google Shopping; will allow for a much larger class of object image sequences to be processed
+		\item Developed image processing techniques to clean a sequence of object photos to QA specifications, allowing for a much larger class of object image sequences to be processed; currently for Google Shopping
+		\item Used \CC, OpenCV, and the Ceres non-linear solver library
 	\end{itemize}
 
 	\medskip
@@ -163,11 +175,12 @@
 
 \begin{body}
 	\vspace{14pt}
-	\textbf{Programming, Markup, and Web Languages and Libraries:} \\
-	\textit{Proficient:} C/C++, Java, Python, \LaTeX, HTML, CSS, JavaScript, x86 Assembly, OpenCV \\ 
-	\textit{Familiar:} Mathematica, Ceres Solver, AVR/Arduino C, PIC \& MC6800 Assembly, Fortran, Bash \\
+	\textbf{Tools and Languages:} \\
+	C/\CC, Java, Python, HTML, CSS, JavaScript, x86 Assembly, Arduino/AVR C, \LaTeX, Git, Mathematica, some Matlab, OpenCV, Ceres non-linear solver, MPI (parallelization platform), some Bash \\
+	
 	\medskip
-	\textbf{Hobbies and Interests:} Computer Science and Mathematics, Analog and Digital Electronics, Puzzles, Making Electronic Devices (mix of EE, ME, and CS) including planning and designing, Graphical Arts \\ See website for detailed project descriptions (http://www.albertgural.com/projects/). \\
+	
+	\textbf{Hobbies and Interests:} Mathematics and Computer Science; Analog and Digital Electronics; Puzzles; Designing, Developing, and Constructing Electronic Devices (mix of EE, CS, and ME); Graphical Arts \\ See website for detailed project descriptions (http://www.albertgural.com/projects/). \\
 \end{body}
 
 \smallskip
