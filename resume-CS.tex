@@ -12,8 +12,8 @@
 \leftmargin=0.25in
 \oddsidemargin=0.25in
 \textwidth=6.0in
-\topmargin=-0.25in
-\textheight=9.25in
+\topmargin=-.75in
+\textheight=10in
 
 \raggedright
 %\renewcommand{\rmdefault}{phv}
@@ -46,7 +46,7 @@
 }
 
 \newcommand{\header}[1]{
-	\begin{changemargin}{-0.5in}{-0.5in}
+	\begin{changemargin}{-.5in}{-0.5in}
 		{\large \textbf{\scshape{#1}}}\\
   	\lineover
 	\end{changemargin}
@@ -104,22 +104,19 @@
 \begin{body}
 	\vspace{14pt}
 	\textbf{California Institute of Technology} \hfill \textbf{Pasadena, CA} \\
-	\emph{Electrical Engineering with a minor in Computer Science}, GPA: $4.0/4.3$ \hfill \emph{Oct. 2012 - present} \\
+	\emph{Electrical Engineering with a minor in Computer Science}, GPA: $4.0$ \hfill \emph{Oct. 2012 - present} \\
 	\begin{itemize}
-	\item \textbf{Current Coursework:} Quantum Computation, Advanced Digital Systems Design, Machine Learning and Data Mining, Mixed Mode Integrated Circuits Research (with Professor Emami)
-	\item \textbf{Past Coursework:} Algorithms, Computing Systems, Embedded Systems (FPGA Oscilloscope), Feedback and Control Circuits, Signal-Processing Systems, Semiconductor Devices, Abstract Algebra, Combinatorial Analysis, Stochastic Processes, Discrete Differential Geometry
-	\item \textbf{Activities:} ACM-ICPC Programming Contest (\textit{2012-14}), Robotics Team (Electronics) (\textit{2012-14})
-	\item \textbf{Awards:} ACM-ICPC ($3^\text{rd}$ place at regionals, \textit{2013}; $4^\text{th}$ place at regionals, \textit{2014})
+	\item \textbf{Current Coursework:} Mixed-mode Integrated Circuits Research (with Professor Emami)
+	\item \textbf{Past Coursework:} Machine Learning and Data Mining, Algorithms, Computing Systems, Embedded Systems (FPGA Oscilloscope), Advanced Digital Systems Design (AVR Processor in VHDL), Mixed-mode Integrated Circuits, Feedback and Control Circuits, Signal-Processing Systems, Combinatorial Analysis, Stochastic Processes, Discrete Differential Geometry, Quantum Computation
+	\item \textbf{Activities/Awards:} ACM-ICPC ($3^\text{rd}$ place at regionals, \textit{2013}; $4^\text{th}$ place at regionals, \textit{2014})
 	\end{itemize}
 
-	\medskip
+	\smallskip
 
 	\textbf{Thomas Jefferson High School for Science and Technology} \hfill \textbf{Alexandria, VA} \\
-	\emph{Senior Research in Computer Science}, GPA: $4.45/4.00$ \hfill \emph{Sept. 2008 - June 2012} \\
+	\emph{Senior Research in Computer Science}, GPA: $4.45$ \hfill \emph{Sept. 2008 - June 2012} \\
 	\begin{itemize}
-	\item \textbf{Relevant Coursework:} Microprocessor Electronics, Artificial Intelligence, Single and Multivariable Calculus, Advanced Math Techniques (Linear, Integration, Series Expansions, Distributions, etc.)
-	\item \textbf{Activities:} Computer Team (co-captain, \textit{2010-12}), Varsity Math Team, Botball Robotics, Physics Team
-	\item \textbf{Awards:} USACO (algorithmic coding, gold division), ACSL (CS topics, \nth{1} place individual, \textit{2010-11}), AIME qualifier (math, \textit{2009-12}), Naval Research Lab (\nth{1} place project in CS, \textit{2011})
+	\item \textbf{Activities/Awards:} Computer Team (co-captain, \textit{2010-12}), USACO (algorithmic coding, gold division), ACSL (CS topics, \nth{1} place individual, \textit{2010-11}), Naval Research Lab (\nth{1} place project in CS, \textit{2011})
 	\end{itemize}
 \end{body}
 
@@ -132,24 +129,23 @@
 
 \begin{body}
 	\vspace{14pt}
-	\textbf{California Institute of Technology}, \emph{Teaching Assistant} \hfill \emph{Spring 2014, Winter 2015}\\
-	\emph{CS 38 (Algorithms; Spring 2014) and EE 45 (Electronics Laboratory; Winter 2015)}
+	\textbf{California Institute of Technology}, \emph{Teaching Assistant} \\
+	\emph{CS 38 (Algorithms; Spring 2014, Spring 2015) and EE 45 (Electronics Laboratory; Winter 2015)}
 	\vspace*{-4pt}
 	\begin{itemize}
-		\item Conducted weekly office hours; provided intuition for problem solving as well as concrete examples and big picture overviews. Graded assignments. 
-		\item Received $100\%$ positive reviews (many commented on my ability to explain difficult material well).
+		\item Received very positive reviews. Conducted weekly office hours; provided intuition for problem solving as well as concrete examples and big picture overviews. Graded assignments.
 	\end{itemize}
 
-	\medskip
+	\smallskip
 
 	\textbf{Jane Street Capital}, \emph{Software Developer Intern} \hfill \emph{Summer 2014}\\
 	\vspace*{-4pt}
 	\begin{itemize}
 		\item Completed two projects - (1) fault-tolerant distributed lock server to replace NFS locks; (2) plugin support for the internal trader tool as well as a plugin ecosystem for trader developers with version control.
-		\item Used OCaml (especially the Async monad, RPCs, DynLoader).
+		\item Used OCaml (including RPCs, DynLoader).
 	\end{itemize}
 
-	\medskip
+	\smallskip
 
 	\textbf{Google (Research Division)}, \emph{Software Engineering Intern} \hfill \emph{Summer 2013}\\
 	\vspace*{-4pt}
@@ -158,7 +154,7 @@
 		\item Used \CC, OpenCV, and the Ceres non-linear solver library.
 	\end{itemize}
 
-	\medskip
+	\smallskip
 
 	\textbf{Naval Research Laboratory}, \emph{Intern, High Performance Computing} \hfill \emph{Summer 2011, 2012}\\
 	\vspace*{-4pt}
@@ -170,6 +166,22 @@
 
 \smallskip
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Projects
+\header{Projects}
+\begin{body}
+	\vspace{14pt}
+	\textbf{Solid state Tesla coil, built from scratch} \hfill \emph{Summer 2015} \\
+	\textbf{6-8 GHz all-digital delay-locked loop in 45nm CMOS technology}, \emph{group project} \hfill \emph{Spring 2015}\\
+	\textbf{8-bit AVR-compatible processor in VHDL for a Xilinx FPGA}, \emph{group project} \hfill \emph{Winter 2015}\\
+	\textbf{Differential geometry algorithms: mesh smoothing, flattening, surface flow} \hfill \emph{Fall 2014}\\
+	\textbf{3-stage BJT amplifier with flat 40dB gain from 10Hz to 200kHz}, \emph{group project} \hfill \emph{Spring 2014}\\
+	\textbf{FPGA-based oscilloscope, designed and built from scratch} \hfill \emph{Spring 2014}\\
+	\textbf{Robotrike firmware (interrupt-based OS written exclusively in x86 assembly)} \hfill \emph{Fall 2013}\\
+\end{body}
+
+\smallskip
+\smallskip
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Skills
@@ -178,11 +190,12 @@
 \begin{body}
 	\vspace{14pt}
 	\textbf{Tools and Languages:} \\
-	C/\CC, Java, OCaml, VHDL, x86 Assembly, \LaTeX, Mathematica, Git, some Bash, OpenCV, MPI (parallelization platform), Altium, Altera and Xilinx toolchains, many other proprietary tools \\
+	C/\CC, Java, Python, OCaml, Haskell, VHDL/Verilog, x86 Assembly, \LaTeX, Mathematica, Git, Bash, OpenCV, MPI (parallelization platform), Altium, Altera and Xilinx toolchains, Cadence Virtuoso, etc. \\
 	
 	\medskip
 	
-	\textbf{Hobbies and Interests:} Mathematics and Computer Science; Analog and Digital Electronics; Puzzles; Designing, Developing, and Constructing Electronic Devices (mix of EE, CS, and ME) \\ See website for detailed project descriptions (http://www.albertgural.com/projects/). \\
+	\textbf{Hobbies and Interests:} Mathematics and Computer Science; Analog and Digital Electronics; Puzzles; Designing, Developing, and Constructing Electronic Devices (mix of EE, CS, and ME). \\
+	% (uncomment when updated) See website for detailed project descriptions (http://www.albertgural.com/projects/). \\
 \end{body}
 
 \smallskip
