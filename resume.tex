@@ -6,6 +6,7 @@
 \usepackage{enumitem}
 \usepackage{fixltx2e}
 \usepackage{bm}
+\usepackage{url}
 \usepackage[super]{nth}
 
 \thispagestyle{empty}
@@ -91,8 +92,8 @@
 	\begin{center}
 		\begin{tabular}{ccc}
 			\parbox[t]{3cm}{\hspace{1cm}} &
-			\parbox[t]{5.7cm}{\center{{\huge \scshape {Albert Gural}} \\ \smallskip {http://www.albertgural.com/}}} &
-			\parbox[t]{6cm}{\center{\vspace{0.45cm} {\small agural@stanford.edu $|$ 703.346.2869}\\
+			\parbox[t]{5.7cm}{\center{{\huge \scshape {Albert Gural}} }}&%\\ \smallskip {http://www.albertgural.com/}}} &
+			\parbox[t]{6cm}{\center{\vspace{0.25cm} {\small agural@stanford.edu $|$ 703.346.2869}\\
 			%{\footnotesize ***Update with Stanford address***}
 	}}
 		\end{tabular}
@@ -109,12 +110,14 @@
 \begin{body}
 	\vspace{14pt}
 	\textbf{Stanford University} \hfill \textbf{Stanford, CA} \\
-	\emph{Ph.D. Electrical Engineering}, GPA: $4.0$ \hfill \emph{Sept. 2016 - present} \\
+	\emph{M.S. Electrical Engineering}, GPA: $4.0$ \hfill \emph{June 2018} \\
+	\emph{Ph.D. Electrical Engineering} \hfill \emph{Sept. 2016 - present} \\
 	\begin{itemize}
 	\item \textbf{Murmann Mixed-Signal Group (Boris Murmann)} \\
-	\item \textbf{Selected Coursework:} Fundamentals of Analog IC Design, Advanced Analog IC Design, RF IC Design, Principles and Models of Semiconductor Devices, Digital Signal Processing
+	%\item \textbf{Selected Coursework:} Fundamentals of Analog IC Design, Advanced Analog IC Design, RF IC Design, Analog-Digital Interface Circuits, Digital Signal Processing
+	\item \textbf{Selected Coursework:} Large Scale Matrix Computation, Convex Optimization, Deep Learning, Reinforcement Learning, Digital Signal Processing, Information Theory, Analog-Digital Interface Circuits
 	%\item \textbf{Research:}
-	\item \textbf{Activities/Awards:} The Krishna Kolluri Graduate Fellowship Fund
+	\item \textbf{Awards:} NSF Graduate Research Fellowship, The Krishna Kolluri Graduate Fellowship Fund
 	\end{itemize}
 
 	\smallskip
@@ -124,7 +127,7 @@
 	\begin{itemize}
 	%\item \textbf{Current Coursework:} Mixed-mode Integrated Circuits Research (with Professor Emami)
 	\item \textbf{Selected Coursework:} Senior Thesis (MICS Lab), Machine Learning and Data Mining, Advanced Digital Systems, Mixed-mode ICs, Feedback and Control Circuits, Signal-Processing Systems
-	\item \textbf{Activities/Awards:} ACM-ICPC (international collegiate programming contest - \textbf{Honorable Mention} at internationals, \textit{2016, Thailand}; $\boldsymbol{1}^\text{\textbf{st}}$ \textbf{place team} at regionals, \textit{2015}; $4^\text{th}$ place team, \textit{2014}),\\The Kiyo and Eiko Tomiyasu SURF Scholar award (Caltech, \textit{2015}), member of Tau Beta Pi honor society
+	\item \textbf{Awards:} ACM-ICPC (collegiate programming contest) international contestant \textit{Thailand, 2016}%,\\The Kiyo and Eiko Tomiyasu SURF Scholar award (Caltech, \textit{2015}), Tau Beta Pi honor society member
 	\end{itemize}
 
 	%\smallskip
@@ -146,32 +149,50 @@
 \begin{body}
 	\vspace{14pt}
 	
-	\textbf{Stanford (Boris Murmann Mixed-Signal Group)}, \emph{PhD Research} \hfill \emph{2016-now}\\
+	\textbf{Stanford University (Boris Murmann Mixed-Signal Group)}, \emph{PhD Research} \hfill \emph{2016-now}\\
 	\vspace*{-4pt}
 	\begin{itemize}
-	    \item Researching methods to lower power consumption of PPG heart rate sensors.
-	    \item Preliminary results show machine learning inspired techniques can robustly track heart rate with $50\times$ power reduction over state-of-the-art methods.
-	    %\item Analyzing techniques such as compressive sensing to lower power, spectrum track finding for robust heart rate detection, and machine learning classification algorithms for detecting rest conditions.
+	    \item Researching methods to reduce memory for hardware acceleration of deep learning inference and training.
+	    \item Convolutional neural network memory reduction for low memory microcontroller inference, published at the ICML 2019 conference. \url{http://proceedings.mlr.press/v97/gural19a.html}
+	    \item Resistive RAM (RRAM) - based in-memory compute architecture for deep learning inference, published at the ASILOMAR 2019 conference. \url{DOI: 10.1109/IEEECONF44664.2019.9048704}
+	    \item Low rank training methods to reduce weight memory writes for training on inference-optimized RRAM devices (ongoing research; draft available on request).
+	    \item Multi-modality localization and identification of passive tags for IoT devices (ongoing research).
+	\end{itemize}
+
+	\smallskip
+
+	\textbf{Stanford University}, \emph{Teaching Assistant} \hfill \emph{Fall 2018} \\
+	%\emph{CS 38 (Algorithms; Spring 2014, Spring 2015) and EE 45 (Electronics Laboratory; Winter 2015)}
+	\vspace*{-4pt}
+	\begin{itemize}
+		\item \emph{Analog-Digital Interface Circuits:} Developed and conducted office hours, recorded review sessions, homework, and an ADC design project. Topics covered include sampling and signal processing, analysis of noise in mixed-signal circuits, and ADC/DAC design.% Received very positive reviews from students.
+		%\item Conducted weekly office hours; provided intuition for problem solving as well as concrete examples and big picture overviews. Graded assignments. Received extremely positive reviews from students.
 	\end{itemize}
 	
 	\smallskip
 	
-	\textbf{Xilinx}, \emph{Machine Learning Intern} \hfill \emph{Summer 2017}\\
+	\textbf{Xilinx}, \emph{Machine Learning Intern} \hfill \emph{Summer 2017, 2018}\\
 	\vspace*{-4pt}
 	\begin{itemize}
-		\item Completed two projects - (1) improved Winograd transforms ($100\times$ condition number improvement over state-of-the-art) for convolutional neural network compression; (2) implemented a structured matrices transform technique ($1000\times$ parameter reduction typical) for fully-connected neural network compression.
-		\item Used Python, NumPy, and TensorFlow.
+		\item \emph{Summer 2018:} Improved on state-of-the-art deep RF signal modulation scheme classification accuracy. Developed new methods for quantized training meant for efficient high-accuracy inference on FPGAs. MLSys 2020 conference publication. \url{https://proceedings.mlsys.org/papers/2020/71}
+		\item \emph{Summer 2017:} Completed two neural network compression projects - (1) $100\times$ condition number improvement of Winograd transforms for convolution layers; (2) $1000\times$ parameter reduction using structured matrix transform technique for fully-connected layers.
 	\end{itemize}
+	
+%	\smallskip
+%	
+%	\textbf{Xilinx}, \emph{Machine Learning Intern} \hfill \emph{Summer 2017}\\
+%	\vspace*{-4pt}
+%	\begin{itemize}
+%		\item Completed two projects - (1) improved Winograd transforms ($100\times$ condition number improvement over state-of-the-art) for convolutional neural network compression; (2) implemented a structured matrices transform technique ($1000\times$ parameter reduction typical) for fully-connected neural network compression.
+%		\item Used Python, NumPy, and TensorFlow.
+%	\end{itemize}
 
 	\smallskip
 
 	\textbf{Caltech (Azita Emami MICS Lab)}, \emph{Senior Thesis} \hfill \emph{2015-16}\\
 	\vspace*{-4pt}
 	\begin{itemize}
-		\item VLSI 2017 conference publication. DOI: 10.23919/VLSIC.2017.8008566
-		\item Designed a novel low-power, high-linearity PLL-based potentiostat for measuring blood glucose levels.
-		\item Fabricated in TSMC 65nm and successfully tested with glucose solutions \emph{in vitro}.
-		\item Developed an FPGA/NIOS-II testing framework that lead to huge productivity improvements.
+		\item Novel low-power, high-linearity PLL-based potentiostat for measuring blood glucose levels in TSMC 65nm, published at the VLSI 2017 conference. \url{DOI: 10.23919/VLSIC.2017.8008566}
 	\end{itemize}
 
 	\smallskip
@@ -181,6 +202,17 @@
 	\begin{itemize}
 		\item Designed and simulated a novel PLL-based potentiostat for measuring dopamine concentrations \emph{in vivo}.
 		\item Used Cadence Virtuoso with 45nm CMOS predictive models. % Insert paper link
+	\end{itemize}
+
+	\smallskip
+
+	\textbf{California Institute of Technology}, \emph{Teaching Assistant} \hfill \emph{2014, 2015} \\
+	%\emph{CS 38 (Algorithms; Spring 2014, Spring 2015) and EE 45 (Electronics Laboratory; Winter 2015)}
+	\vspace*{-4pt}
+	\begin{itemize}
+		\item \emph{Algorithms:} Lectured and created course materials for topics including graph algorithms, greedy algorithms, dynamic programming, flow networks, and linear programming.
+		\item \emph{Electronics Laboratory:} Conducted homework and laboratory sessions in topics including discrete analog components, op-amp circuits, and differential amplifier circuits.
+		%\item Conducted weekly office hours; provided intuition for problem solving as well as concrete examples and big picture overviews. Graded assignments. Received extremely positive reviews from students.
 	\end{itemize}
 
 	\smallskip
@@ -209,24 +241,14 @@
 	%	\item \emph{Summer 2012:} Built a molecular dynamics simulation in C; compared different integration step algorithms including brute force, linked cell, and monotonic Lagrangian grid.
 	%	\item \emph{Summer 2011:} Created an MPI (Message Passing Interface) library for parallel operations on a grid in \CC, tested on a wave propagation simulation, then analyzed its efficiency.
 	%\end{itemize}
-
-	\smallskip
-
-	\textbf{California Institute of Technology}, \emph{Teaching Assistant} \hfill \emph{2014, 2015} \\
-	%\emph{CS 38 (Algorithms; Spring 2014, Spring 2015) and EE 45 (Electronics Laboratory; Winter 2015)}
-	\vspace*{-4pt}
-	\begin{itemize}
-		\item \emph{Algorithms:} Lectured and created course materials for topics including graph algorithms, greedy algorithms, dynamic programming, flow networks, and linear programming.
-		\item \emph{Electronics Laboratory:} Conducted homework and laboratory sessions in topics including discrete analog components, op-amp circuits, and differential amplifier circuits.
-		%\item Conducted weekly office hours; provided intuition for problem solving as well as concrete examples and big picture overviews. Graded assignments. Received extremely positive reviews from students.
-	\end{itemize}
 \end{body}
 
 \smallskip
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Projects
-\newpage
+%\newpage
+\iffalse
 \header{Projects}
 \begin{body}
 	\vspace{14pt}
@@ -246,6 +268,7 @@
 \end{body}
 
 \medskip
+\fi
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Skills
@@ -253,7 +276,7 @@
 
 \begin{body}
 	\vspace{14pt}
-	C, \CC, Python/NumPy/scikit-learn/TensorFlow, Matlab, Mathematica, \LaTeX, VHDL/Verilog, Java, x86 Assembly, Git, Bash, Altium, Altera and Xilinx toolchains, SPICE, Cadence Virtuoso
+	C, \CC, Python (numpy, scipy, scikit-learn, PyTorch, TensorFlow), Mathematica, Matlab, \LaTeX, VHDL/Verilog, Java, SPICE, Cadence Virtuoso
 	% Removed: OCaml Haskell, OpenCV, MPI (parallelization platform)
 \end{body}
 
